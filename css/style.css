@@ -718,16 +718,28 @@ nav#footer{
 		  padding-right: 0 !important;
 	  }
 
+	  .modal-backdrop{
+		  z-index: 0 !important;
+	  }
 
-.fade-scale {
-  transform: scale(0);
-  opacity: 0;
-  -webkit-transition: all .25s linear;
-  -o-transition: all .25s linear;
-  transition: all .25s linear;
-}
+	  
+	.vertical-alignment-helper {
+		display:table;
+		height: 100%;
+		width: 100%;
+	}
+	.vertical-align-center {
+		/* To center vertically */
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.modal-content {
+		/* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+		width:inherit;
+		height:inherit;
+		/* To center horizontally */
+		margin: 0 auto;
+	}
 
-.fade-scale.in {
-  opacity: 1;
-  transform: scale(1);
-}
+
+	
