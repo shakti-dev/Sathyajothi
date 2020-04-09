@@ -1,27 +1,3 @@
-// The MIT License (MIT)
-
-// Typed.js | Copyright (c) 2014 Matt Boldt | www.mattboldt.com
-
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to deal
-// in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE.
-
-
-
 
 !function($){
 
@@ -335,47 +311,26 @@
 
 
 
+// Progress bar
 
-var ctx = document.getElementById("chart-area").getContext("2d");
-var myPie = new Chart(ctx, {
-  type: 'pie',
-  data: {
-    labels: ["FAISAL","muhammadfaisali","faisaliqbal3699"],
-    datasets: [{
-      backgroundColor: ["#00b638","#efaa30","#50c8ea"],
-      data: [500000, 75000, 100000]
-    }],
-  },
-  options: {
-    title: {
-      display: true,
-      text: 'Employee Overview',
-      fontStyle: 'bold',
-      fontSize: 20
-    },
-    tooltips: {
-      callbacks: {
-        // this callback is used to create the tooltip label
-        label: function(tooltipItem, data) {
-          // get the data label and data value to display
-          // convert the data value to local string so it uses a comma seperated number
-          var dataLabel = data.labels[tooltipItem.index];
-          var value = ': ' + data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index].toLocaleString();
+var delay = 500;
+$(".progress-bar").each(function(i){
+    $(this).delay( delay*i ).animate( { width: $(this).attr('aria-valuenow') + '%' }, delay );
 
-          // make this isn't a multi-line label (e.g. [["label 1 - line 1, "line 2, ], [etc...]])
-          if (Chart.helpers.isArray(dataLabel)) {
-            // show value on first line of multiline label
-            // need to clone because we are changing the value
-            dataLabel = dataLabel.slice();
-            dataLabel[0] += value;
-          } else {
-            dataLabel += value;
-          }
-
-          // return the text to display on the tooltip
-          return dataLabel;
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: delay,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now)+'%');
         }
-      }
-    }
-  }
+    });
 });
+
+// Career js
+
+$('#bologna-list a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})

@@ -52,12 +52,12 @@ p{
 }
 hr{
 	width: 50px;
-	border-color: #c59a6d;
+	border-color: #c56dc2;
 }
 a {color: #222222}
 a:hover,
 a:focus{
-	color: #c59a6d;
+	color: #c56dc2;
 	text-decoration: none;
 }
 #home{
@@ -73,7 +73,7 @@ a:focus{
 }
 #home a.down-btn span.fa.fa-angle-down {
 	font-size: 26px;
-	border: 1px solid #c59a6d;
+	border: 1px solid #c56dc2;
 	border-radius: 2px;
 	padding: 7px 5px;
 	position: relative;
@@ -166,7 +166,7 @@ z-index: 10;
 .navbar-default .navbar-offcanvas .navmenu-nav>li>a:hover, 
 .navmenu-default .navmenu-nav>li>a:focus, 
 .navbar-default .navbar-offcanvas .navmenu-nav>li>a:focus {
-color: #C59A6D;
+color: #c56dc2;
 background-color: transparent;
 }
 .nav > li {
@@ -182,7 +182,7 @@ font-size: 12px;
 line-height: 30px;
 }
 nav#menu span.fa.fa-bars:hover {
-color: #C59A6D;
+color: #c56dc2;
 }
 .navmenu-default .navmenu-nav>.active>a, 
 .navbar-default .navbar-offcanvas .navmenu-nav>.active>a, 
@@ -190,12 +190,12 @@ color: #C59A6D;
 .navbar-default .navbar-offcanvas .navmenu-nav>.active>a:hover, 
 .navmenu-default .navmenu-nav>.active>a:focus, 
 .navbar-default .navbar-offcanvas .navmenu-nav>.active>a:focus {
-color: #C59A6D;
+color: #c56dc2;
 background-color: transparent;
 }
 
 .close:hover{
-	background: #c59a6d;
+	background: #c56dc2;
 	color: #ffffff;
 	opacity: 1;
 }
@@ -218,12 +218,12 @@ background-color: transparent;
 
 a.down-btn span.fa.fa-angle-down {
 	font-size: 26px;
-	border: 1px solid #c59a6d;
+	border: 1px solid #c56dc2;
 	border-radius: 2px;
 	padding: 7px 5px;
 	position: relative;
 	cursor: pointer;
-	color: #c59a6d;
+	color: #c56dc2;
 	margin-top: 30px;
 }
 
@@ -260,10 +260,10 @@ a.down-btn span.fa.fa-angle-down {
 }
 .service:hover>h4,
 .service:hover>span.fa{
-	color: #c59a6d;
+	color: #c56dc2;
 }
 .service:hover{
-	border-color: #c59a6d;
+	border-color: #8a6d3bcf;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	cursor: pointer;
@@ -284,7 +284,7 @@ a.down-btn span.fa.fa-angle-down {
 
 a.btn.go-to-btn{
 	text-transform: uppercase;
-	border: 1px solid #c59a6d;
+	border: 1px solid #c56dc2;
 	word-spacing: 2px;
 	padding: 7px 30px;
 	border-radius: 2px;
@@ -293,8 +293,9 @@ a.btn.go-to-btn{
 	transition: all 0.5s;
 }
 a.btn.go-to-btn:hover{
-	background: #c59a6d;
-	color: #282f35;
+	background: #8263c9;
+	color: #ffffff;
+	border: 1px solid #8263c9;
 }
 
 .nopadding{
@@ -355,13 +356,13 @@ a.btn.go-to-btn:hover{
 }
 
 .hover-text p.lead{
-	color: #c59a6d;
+	color: #c56dc2;
 }
 
 
 a.btn.read-more-btn{
 	text-transform: uppercase;
-	background: #c59a6d;
+	background: #337ab7;
 	color: #282f35;
 	word-spacing: 2px;
 	padding: 7px 30px;
@@ -371,13 +372,13 @@ a.btn.read-more-btn{
 	transition: all 0.5s;
 }
 a.btn.read-more-btn:hover{
-	background: #222222;
+	background: #8ab1d3;
 	color: #ffffff;
 }
 
 a.btn.send-btn{
 	text-transform: uppercase;
-	background: #c59a6d;
+	background: #337ab7b8;
 	color: #282f35;
 	padding: 15px 35px;
 	border-radius: 0;
@@ -387,7 +388,7 @@ a.btn.send-btn{
 }
 a.btn.send-btn:hover{
 	background: transparent;
-	border: 1px solid #c59a6d;
+	border: 1px solid #c56dc2;
 	color: #ffffff;
 }
 
@@ -432,21 +433,21 @@ ul.clients li{
 .team:hover.hire,
 .team.hire{
 	height: 340px;
-	border-color: #c59a6d;
-	color: #c59a6d;
+	border-color: #c56dc2;
+	color: #c56dc2;
 	opacity: 1;
 }
 
 .team.hire>a{
-	color: #c59a6d;
+	color: #c56dc2;
 }
 .team hr{
 	border-width: 2px;
-	border-color: #dcc2a7;
+	border-color: #c56dc2;
 }
 .team:hover{
 	opacity: 1;
-	border: 1px solid #222;
+	border: 1px solid #c56dc2;
 }
 .team img {
 	width: 80px;
@@ -480,7 +481,7 @@ ul.clients li{
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 0;
-	background: #C59A6D;
+	background: #c56dc2;
 }
 
 #contact{
@@ -513,7 +514,7 @@ address:before{
   	text-rendering: auto;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
-  	color: #c59a6d;
+  	color: #c56dc2;
   	vertical-align: middle;
   	margin-right: 15px;
   	margin-left: -30px;
@@ -552,7 +553,7 @@ margin-bottom: 30px;
 }
 
 #contact .form-control:focus {
-	border-color: #C59A6D;
+	border-color: #c56dc2;
 	outline: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -590,10 +591,10 @@ nav#footer{
 	background: #282f35;
 	padding: 40px 0;
 	color: #ffffff;
-	border-bottom: 5px solid #c59a6d;
+	border-bottom: 5px solid #c56dc2;
 }
 #footer span.fa{
-	color: #c59a6d;
+	color: #c56dc2;
 	font-size: 26px;
 	margin-left: 10px;
 }
@@ -601,7 +602,7 @@ nav#footer{
 	color: #ffffff;
 }
 #footer a:hover{
-	color: #c59a6d;}
+	color: #c56dc2;}
 
 
 
@@ -741,5 +742,117 @@ nav#footer{
 		margin: 0 auto;
 	}
 
+/* Progress bar */
 
+.newProg {
+	padding: 0em 3em;
+  }
+  
+  .textbox {
+	height: 700px;
+  }
+  
+  .progress {
+	margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+	width: 0;
+  }
 	
+  /* Career cards */
+
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 34, 51, 0.1);
+    box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05), 2px 4px 10px 0 rgba(0, 34, 51, 0.05);
+    border-radius: 0.15rem;
+}
+
+/* Tabs Card */
+
+.tab-card {
+  border:1px solid #eee;
+  padding: 2em;
+  max-width: 59%;
+}
+
+.tab-card-header {
+  background:none;
+}
+/* Default mode */
+.tab-card-header > .nav-tabs {
+  border: none;
+  margin: 0px;
+  margin-bottom: 25px;
+}
+.tab-card-header > .nav-tabs > li {
+  margin-right: 2px;
+}
+.tab-card-header > .nav-tabs > li > a {
+  border: 0;
+  border-bottom:2px solid transparent;
+  margin-right: 0;
+  color: #737373;
+  padding: 2px 15px;
+}
+
+.tab-card-header > .nav-tabs > li > a.show {
+    border-bottom:2px solid #007bff;
+    color: #007bff;
+}
+.tab-card-header > .nav-tabs > li > a:hover {
+    color: #007bff;
+}
+
+.tab-card-header > .tab-content {
+  padding-bottom: 0;
+}
+
+.degree .diploma .schooling{
+	margin-bottom: 14px;
+}
+
+@media (max-width:635px){
+	.card{
+		width:550px !important;
+	}
+}
+
+@media (max-width:600px){
+	.card{
+		width:515px !important;
+	}
+}
+
+@media (max-width:575px){
+	.card{
+		width:488px !important;
+	}
+}
+
+@media (max-width:550px){
+	.card{
+		width:465px !important;
+	}
+}
+
+@media (max-width:525px){
+	.card{
+		width:440px !important;
+	}
+}
+
+@media (max-width:550px){
+	.card{
+		width:465px !important;
+	}
+}
+
+
+@media (max-width:500px){
+	.card{
+		width:350px !important;
+	}
+}
