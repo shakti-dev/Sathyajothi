@@ -21,7 +21,7 @@ function main() {
       });
 
     /*====================================
-    Menu Active Calling Scroll Spy
+    Menu Active Calling Scrolling
     ======================================*/
     $('body').scrollspy({ 
       target: '.navmenu',
@@ -30,7 +30,7 @@ function main() {
 
 
     /* ==============================================
-	Testimonial Slider
+	Testimonial Slide
 	=============================================== */ 
 
 	$(document).ready(function() {

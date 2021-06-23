@@ -185,21 +185,7 @@
 
                 self.timeout = setTimeout(function() {
 
-                    // ----- this part is optional ----- //
-                    // check string array position
-                    // on the first string, only delete one word
-                    // the stopNum actually represents the amount of chars to
-                    // keep in the current string. In my case it's 14.
-                    // if (self.arrayPos == 1){
-                    //  self.stopNum = 14;
-                    // }
-                    //every other time, delete the whole typed string
-                    // else{
-                    //  self.stopNum = 0;
-                    // }
-
-                    // ----- continue important stuff ----- //
-                    // replace text with base text + typed characters
+                  
                     var nextString = self.baseText + curString.substr(0, curStrPos);
                     if (self.attr) {
                      self.el.attr(self.attr, nextString);
@@ -212,6 +198,7 @@
                     if (curStrPos > self.stopNum){
                         // subtract characters one by one
                         curStrPos--;
+
                         // loop the function
                         self.backspace(curString, curStrPos);
                     }
@@ -231,24 +218,6 @@
                 }, humanize);
 
             }
-
-            // Start & Stop currently not working
-
-            // , stop: function() {
-            //     var self = this;
-
-            //     self.stop = true;
-            //     clearInterval(self.timeout);
-            // }
-
-            // , start: function() {
-            //     var self = this;
-            //     if(self.stop === false)
-            //        return;
-
-            //     this.stop = false;
-            //     this.init();
-            // }
 
             // Reset and rebuild the element
             , reset: function(){
