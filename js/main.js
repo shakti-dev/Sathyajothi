@@ -1,65 +1,64 @@
+$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
 
-function main() {
 
-(function () {
-   'use strict';
-
-   /*====================================
-    Page a Link Smooth Scrolling 
-    ======================================*/
-    $('a.page-scroll').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 900);
-            return false;
-          }
-        }
-      });
-
-    /*====================================
-    Menu Active Calling Scrolling
-    ======================================*/
-    $('body').scrollspy({ 
-      target: '.navmenu',
-      offset: 80,
+/******************************************************************************************************************************
+Learn More Page Scroll
+*******************************************************************************************************************************/
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
     });
+});
+
+/******************************************************************************************************************************
+Menu
+*******************************************************************************************************************************/ 
+(function() {
+
+	var bodyEl = document.body,
+		//content = document.querySelector( '.content-wrap' ),
+		openbtn = document.getElementById( 'open-button' ),
+		closebtn = document.getElementById( 'close-button' ),
+		isOpen = false;
+
+	function init() {
+		initEvents();
+	}
+
+	function initEvents() {
+		openbtn.addEventListener( 'click', toggleMenu );
+		if( closebtn ) {
+			closebtn.addEventListener( 'click', toggleMenu );
+		}
+
+		/* close the menu element if the target it´s not the menu element or one of its descendants..
+		content.addEventListener( 'click', function(ev) {
+			var target = ev.target;
+			if( isOpen && target !== openbtn ) {
+				toggleMenu();
+			}
+		} );
+		*/
+	}
+
+	function toggleMenu() {
+		if( isOpen ) {
+			classie.remove( bodyEl, 'show-menu' );
+		}
+		else {
+			classie.add( bodyEl, 'show-menu' );
+		}
+		isOpen = !isOpen;
+	}
+
+	init();
+
+})();
 
 
-    /* ==============================================
-	Testimonial Slide
-	=============================================== */ 
-
-	$(document).ready(function() {
-	 
-	  $("#testimonial").owlCarousel({
-	 
-	      navigation : false, // Show next and prev buttons
-	      slideSpeed : 300,
-	      paginationSpeed : 400,
-	      singleItem:true,
-	      autoHeight : true
-	 
-	      // "singleItem:true" is a shortcut for:
-	      // items : 1, 
-	      // itemsDesktop : false,
-	      // itemsDesktopSmall : false,
-	      // itemsTablet: false,
-	      // itemsMobile : false
-	 
-	  });
-	 
-	});
- 
-
- 
-
-
-}());
-
-
-}
-main();
